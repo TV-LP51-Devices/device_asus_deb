@@ -18,7 +18,7 @@ $(call inherit-product, device/asus/deb/full_deb.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := deb
-PRODUCT_NAME := cm_deb
+PRODUCT_NAME := validus_deb
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
