@@ -5,13 +5,13 @@ TARGET_SCREEN_WIDTH := 1200
 TARGET_BOOTANIMATION_HALF_RES := true
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/validus/config/common_full_tablet_wifionly.mk)
 
 # Inherit telephony stuff
-$(call inherit-product, vendor/cm/config/telephony.mk)
+$(call inherit-product, vendor/validus/config/telephony.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/validus/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/deb/full_deb.mk)
