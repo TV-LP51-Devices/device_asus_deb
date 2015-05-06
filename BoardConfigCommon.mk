@@ -37,7 +37,7 @@ TARGET_KERNEL_CONFIG := wicked_deb_defconfig
 
 # Custom Kernel Toolchain
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86_64/toolchain/Linaro-4.8/bin/"
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86_64/toolchain/Linaro-4.9/bin/"
 
 # ROM toolchain
 TARGET_GCC_VERSION := 4.9
