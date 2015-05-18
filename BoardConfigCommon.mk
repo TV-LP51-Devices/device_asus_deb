@@ -42,6 +42,9 @@ KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86_64/toolchain/L
 # ROM toolchain
 TARGET_GCC_VERSION := 4.9
 
+# Build with compressed odex
+WITH_DEXPREOPT_COMP=true
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
 BOARD_USES_FLUENCE_INCALL := true
