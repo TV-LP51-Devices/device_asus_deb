@@ -35,12 +35,16 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 TARGET_KERNEL_SOURCE := kernel/asus/deb
 TARGET_KERNEL_CONFIG := wicked_deb_defconfig
 
-# Custom Kernel Toolchain
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86_64/toolchain/Linaro-4.9/bin/"
+# Build with Oracle Java.  OpenJDK is crash-o-matic under heavy loading
+ORACLE_JDK7 := true
 
 # ROM toolchain
-TARGET_GCC_VERSION := 4.9
+TARGET_GCC_VERSION := 4.9-uber
+
+# Custom Kernel Toolchain
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86_64/toolchain/sabermod-arm-linux-gnueabi-5.1/bin/"
+# KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86_64/toolchain/Linaro-4.9/bin/"
 
 # Build with compressed odex
 WITH_DEXPREOPT_COMP=true
