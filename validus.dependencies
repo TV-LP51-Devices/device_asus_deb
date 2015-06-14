@@ -1,8 +1,8 @@
 [
  {
    "remote":	 	"gh",
-   "repository": 	"CyanogenMod/kernel_asus_flo",
-   "target_path": 	"kernel/asus/deb",
+   "repository": 	"CyanogenMod/android_kernel_google_msm",om",
+   "target_path": 	"kernel/google/msm",
    "branch":		"cm-12.1"
  },
  {
