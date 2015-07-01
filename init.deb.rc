@@ -41,7 +41,6 @@ on init
     symlink /storage/emulated/legacy /storage/sdcard0
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
 
-on init
     # Set permissions for persist partition
     mkdir /persist 0771 system system
     mkdir /firmware 0771 system system
@@ -68,6 +67,9 @@ on boot
 
     # Allow QMUX daemon to assign port open wait time
     chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
+
+    # java.io.FileNotFoundException: /proc/cmdline: open failed: EACCES (Permission denied)
+    chmod 0644 /proc/cmdline
 
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
@@ -289,7 +291,6 @@ on post-fs-data
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
-    write /dev/cpuctl/apps/cpu.notify_on_migrate 1
 
 on charger
     # Enable Power modes and set the CPU Freq Sampling rates
