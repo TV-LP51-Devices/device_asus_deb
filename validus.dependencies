@@ -22,11 +22,5 @@
    "repository":        "TheMuppets/proprietary_vendor_broadcom",
    "target_path":       "vendor/broadcom",
    "branch":            "cm-13.0"
- },
- {
-   "remote":            "gh",
-   "repository":        "TheLoonyBin/proprietary_vendor_qcom",
-   "target_path":       "vendor/qcom",
-   "branch":            "mm6.0"
  }
 ]
